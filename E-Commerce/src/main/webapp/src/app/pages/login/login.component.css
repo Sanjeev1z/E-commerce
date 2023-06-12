@@ -1,0 +1,15 @@
+.st-filed-full-width{
+    width: 100%;
+}
+
+.st-form-btn{
+    margin: 0px 8px ;
+}
+
+.container-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  

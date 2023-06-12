@@ -1,0 +1,80 @@
+<app-header></app-header>
+<div class="container ">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <mat-card>
+                <mat-card-content>
+                    <div class="container text-center">                    
+                        <!-- <img src="../../../assets/logo.ico" alt=""> -->
+                        <!-- <img src="" alt=""> -->
+                    </div>
+                    <h1 class="text-center">Register Here !!</h1>
+        
+        
+                    <form [formGroup]="signUpForm" (ngSubmit)="submitForm()"  action="">
+        
+                        <!-- Username -->
+                        <mat-form-field class="st-filed-full-width" appearance="outline">
+                            <mat-label>User Name</mat-label>
+                            <input 
+                            formControlName="username"
+                            matInput placeholder="Enter Here">
+                            <mat-hint>User name must be unique !!</mat-hint>
+                        </mat-form-field>
+        
+                        <!-- Password -->
+                        <mat-form-field class="st-filed-full-width" appearance="outline">
+                            <mat-label>Password</mat-label>
+                            <input
+                            formControlName="password"
+                            type="password" matInput placeholder="Enter Here">
+                            <mat-hint>Password must be at least 6 characters long</mat-hint>
+                            <mat-error *ngIf="isFieldInvalid('password')">Invalid password </mat-error>
+                        </mat-form-field>
+        
+                        <!-- First Name -->
+                        <mat-form-field class="st-filed-full-width" appearance="outline">
+                            <mat-label>First Name</mat-label>
+                            <input 
+                            formControlName="firstName"
+                            matInput placeholder="Enter Here">
+                        </mat-form-field>
+        
+                        <!-- Last Name -->
+                        <mat-form-field class="st-filed-full-width" appearance="outline">
+                            <mat-label>Last Name</mat-label>
+                            <input 
+                            formControlName="lastName"
+                            matInput placeholder="Enter Here">
+                        </mat-form-field>
+
+                        <!-- Email -->
+                        <mat-form-field class="st-filed-full-width" appearance="outline">
+                            <mat-label>Email Address</mat-label>
+                            <input 
+                            formControlName="email"
+                            type="email" matInput placeholder="Enter Here">
+                            <mat-error *ngIf="isFieldInvalid('email')">Invalid email </mat-error>
+                        </mat-form-field>
+        
+                        <!-- Phone Number -->
+                        <mat-form-field class="st-filed-full-width" appearance="outline">
+                            <mat-label>Phone</mat-label>
+                            <input 
+                            formControlName="phone"
+                            type="number" matInput placeholder="Enter Here">
+                        </mat-form-field>
+        
+                        <div class="container text-center">
+                            <button class="st-form-btn" mat-raised-button color="primary" >Register</button>
+                            <button class="st-form-btn" mat-raised-button color="basic" type="reset">Reset</button>
+                        </div>
+        
+                    </form>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>
+
+

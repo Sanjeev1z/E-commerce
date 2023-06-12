@@ -1,0 +1,157 @@
+.custom-toolbar{
+    min-height: 30px;
+    height: 40px;
+}
+
+.custom-font{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(59, 107, 184);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* .divider{
+    display: flex;
+} */
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+/* 
+  https://m.media-amazon.com/images/G/31/gno/sprites/nav-sprite-global-2x-hm-dsk-reorg._CB405936311_.png */
+.nav-sprite {
+    background-image: url(https://m.media-amazon.com/images/G/31/gno/sprites/nav-sprite-global-2x-hm-dsk-reorg._CB405936311_.png);
+    background-size: 350px;
+}
+
+/* 
+#nav-belt{
+    display: flex;
+    position: static;
+    float: none;
+    flex-flow: row nowrap;
+    height: 60px;
+} */
+/* 
+#glow-ingress-block {
+    display: flex;
+    position: static;
+    float: none;
+    flex-flow: column nowrap;
+}
+
+#nav-global-location-slot {
+    display: flex;
+    position: static;
+    float: none;
+    flex-flow: column nowrap;
+}
+
+#nav-logo {
+    display: flex;
+    position: relative;
+    float: none;
+    /* top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    flex-shrink: 0;
+    width: auto; */
+/* 
+.nav-left {
+    display: flex;
+    position: static;
+    float: none;
+    width: auto;
+}
+
+.nav-left {
+    display: flex;
+    position: static;
+    float: none;
+    flex: 1 1 auto;
+}
+
+#nav-search {
+    display: flex;
+    position: static;
+    float: none;
+    flex: 1 1 auto;
+}
+
+.nav-searchbar {
+    display: flex;
+    position: static;
+    float: none;
+    flex: 1 1 auto;
+}
+
+.nav-left {
+    display: flex;
+    position: static;
+    float: none;
+}
+
+.nav-search-scope {
+    display: flex;
+    position: relative;
+    float: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-search-facade {
+    position: relative;
+    float: left;
+    cursor: default;
+    overflow: hidden;
+    top: 3px;
+}
+
+.nav-search-label {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #555;
+    font-size: 12px;
+    line-height: 33px;
+    margin-right: 21px;
+    margin-left: 5px;
+    min-width: 19px;
+}
+
+.nav-icon {
+    position: absolute;
+    top: 14px;
+    right: 8px;
+    border-style: solid;
+    _border-style: dashed;
+    border-width: 4px;
+    border-color: transparent;
+    border-top: 4px solid #666;
+    border-bottom-width: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+}
+ */
+
+
+
+.nav-searchbar{
+    flex-grow: 1;
+    padding: 0px 20px;
+}
+

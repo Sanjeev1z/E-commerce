@@ -1,0 +1,68 @@
+<app-header></app-header>
+
+<div class="container mt-5">
+    <div class="cadr p-2">
+        <mat-card>
+            <mat-card-content>
+                <div class="row">
+                    <div class="col-6">
+
+                        <form [formGroup]="productForm" (ngSubmit)="submitForm()" action="">
+
+                            <mat-form-field appearance="outline" class="w-100"> 
+                                <mat-label>Product Name</mat-label>
+                                <input
+                                formControlName="produtName"
+                                matInput placeholder="Product Name">
+                                <!-- <mat-hint>Hint</mat-hint> -->
+                            </mat-form-field>
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Product Discription</mat-label>
+                                <input 
+                                formControlName="productDescription"
+                                matInput placeholder="Product Discription">
+                                <!-- <mat-hint>Hint</mat-hint> -->
+                            </mat-form-field>
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Product Actual Price</mat-label>
+                                <input 
+                                formControlName="productDiscountedPrice"
+                                matInput placeholder="Product Actual Price">
+                                <!-- <mat-hint>Hint</mat-hint> -->
+                            </mat-form-field>
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Product Discounted Price</mat-label>
+                                <input 
+                                formControlName="productActualPrice"
+                                matInput placeholder="Product Discounted Price">
+                                <!-- <mat-hint>Hint</mat-hint> -->
+                            </mat-form-field>
+
+                        </form>
+
+                    </div>
+                    <div class="col-6">
+                        <mat-form-field appearance="outline" class="w-100">
+                            <mat-label>Outline form field</mat-label>
+                            <input matInput placeholder="Placeholder">
+                            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                    <mat-hint>Hint</mat-hint> -->
+                        </mat-form-field>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex justify-content-center">
+                            <div class="text-center">
+                                <button mat-stroked-button color="primary" type="reset" (click)="reset()">Clear</button>
+                                <button mat-stroked-button color="primary" class="ml10" (click)="submitForm()">Add Product</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
